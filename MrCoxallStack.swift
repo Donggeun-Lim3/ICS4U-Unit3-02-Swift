@@ -20,7 +20,7 @@ class MrCoxallStack {
 
     // This method pops the top integer from the stack.
     func pop() -> Int {
-        let element = self.Peek()
+        let element = self.peek()
         self.stack.remove(at: self.stack.count - 1)
         return element
     }
