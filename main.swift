@@ -22,7 +22,7 @@ while true {
         repeat {
             print("\nDo you want to pop (the top element : \(aStack.peek()))? ",
                   terminator: "")
-            topop = String(readLine()!).uppercased()
+            toPop = String(readLine()!).uppercased()
             if toPop == "Y" || toPop == "YES" {
                 print("\nThe top element : \(aStack.pop()) is popped.")
             }
