@@ -8,11 +8,6 @@ since   2021-12-10
 // Class that emulates a stack
 class MrCoxallStack<T> {
 
-    // Custom error types
-    enum Errors: Error {
-        case emptyStackException
-    }
-  
     // ArrayList signifying a stack
     private var stackAsArray = [T]()
 
@@ -23,11 +18,7 @@ class MrCoxallStack<T> {
 
     // Pops the first element in the stack
     func pop() throws -> T {
-        if self.stackAsArray.count == 0 {
-            throw Errors.emptyStackException
-        } else {
-            return self.stackAsArray.removeFirst()
-        }
+        return self.stackAsArray.removeFirst()
     }
 
     // Displays the stack
