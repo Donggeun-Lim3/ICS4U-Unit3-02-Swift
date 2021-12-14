@@ -30,6 +30,7 @@ while true {
         } else if userInput!.starts(with: allowedCommands[1]) {
             try print("Removed: \(aStack.pop())")
         } else if userInput!.starts(with: allowedCommands[2]) {
+            System.out.println("stack :");
             aStack.showStack()
         } else if userInput!.starts(with: allowedCommands[3]) {
             break
